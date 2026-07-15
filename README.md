@@ -4,9 +4,33 @@ Inventario dos **forks** na conta [maux339-cpu](https://github.com/maux339-cpu) 
 
 > Uso exclusivo em alvos com autorizacao. Nao e kit de crime.
 
+**Atualizado:** 2026-07-15 (wave 2 — gaps da varredura X)
+
 ---
 
-## OSINT — ferramentas principais
+## Wave 2 — OSINT (gaps da varredura X)
+
+| Fork | Upstream | Funcao |
+|------|----------|--------|
+| [web-check](https://github.com/maux339-cpu/web-check) | lissy93 | All-in-one OSINT de website (~34k stars) |
+| [GHunt](https://github.com/maux339-cpu/GHunt) | mxrch | Framework ofensivo Google/Gmail |
+| [ghunt_companion](https://github.com/maux339-cpu/ghunt_companion) | mxrch | Cookies/setup rapido do GHunt |
+| [social-analyzer](https://github.com/maux339-cpu/social-analyzer) | qeeqbox | Username em 1000+ redes (API/CLI/Web) |
+| [Osintgram](https://github.com/maux339-cpu/Osintgram) | Datalux | OSINT Instagram (shell interativa) |
+| [toutatis](https://github.com/maux339-cpu/toutatis) | megadose | Extrai email/phone de contas IG |
+| [robin](https://github.com/maux339-cpu/robin) | apurvsinghgautam | AI Dark Web OSINT |
+| [dark-web-osint-tools](https://github.com/maux339-cpu/dark-web-osint-tools) | apurvsinghgautam | Curadoria tools dark web |
+| [recon-ng](https://github.com/maux339-cpu/recon-ng) | lanmaster53 | Framework OSINT modular |
+| [sn0int](https://github.com/maux339-cpu/sn0int) | kpcyrd | Framework OSINT semi-automatico (Rust) |
+| [OSINT-Cheat-sheet](https://github.com/maux339-cpu/OSINT-Cheat-sheet) | Jieyab89 | 1000+ tools / cheatsheet |
+| [awesome-osint-arsenal](https://github.com/maux339-cpu/awesome-osint-arsenal) | rawfilejson | 750+ tools + installers Kali/Termux |
+| [OpenOSINT](https://github.com/maux339-cpu/OpenOSINT) | OpenOSINT | Agente AI OSINT (MCP/CLI/REPL) |
+| [MetaDetective](https://github.com/maux339-cpu/MetaDetective) | franckferman | Extracao de metadata (OSINT/pentest) |
+| [GitSint](https://github.com/maux339-cpu/GitSint) | N0rz3 | OSINT tracker de GitHub |
+
+---
+
+## OSINT — ferramentas principais (wave 1)
 
 | Fork | Upstream | Funcao |
 |------|----------|--------|
@@ -72,44 +96,44 @@ Inventario dos **forks** na conta [maux339-cpu](https://github.com/maux339-cpu) 
 
 ## Pipeline sugerido
 
-### OSINT pessoa/empresa
+### OSINT pessoa / email / Google
 
 ```text
-awesome-osint / OSINT-BIBLE (mapa)
-  -> sherlock | maigret | blackbird (username)
-  -> holehe | h8mail (email)
-  -> phoneinfoga (telefone)
-  -> spiderfoot (automacao)
-  -> trufflehog (leaks de codigo/wallet keys)
+GHunt (+ ghunt_companion)  -> Gmail/Google footprint
+holehe | h8mail            -> email em sites / breaches
+sherlock | maigret | social-analyzer | blackbird  -> username
+Osintgram | toutatis       -> Instagram
+GitSint                    -> GitHub identity
+OpenOSINT                  -> agente AI multi-tool
 ```
 
-### Superficie web / bug bounty
+### Website / dominio
 
 ```text
-amass | subfinder -> httpx -> katana -> nuclei (+ templates)
-  ou reconftw (pipeline full)
+web-check  -> visao all-in-one
+amass | subfinder -> httpx -> katana -> nuclei
+MetaDetective      -> metadata de docs/imagens
+```
+
+### Dark web / curadoria
+
+```text
+robin | dark-web-osint-tools
+OSINT-Cheat-sheet | awesome-osint-arsenal | awesome-osint
 ```
 
 ### Audit / PoC DeFi
 
 ```text
 slither -> foundry (fork + invariant) -> echidna/medusa
-  + DeFiHackLabs (patterns reais)
-  + attack-vectors checklist
+  + DeFiHackLabs + attack-vectors
 ```
-
----
-
-## O que ficou de fora (de proposito)
-
-- Wallet drainers / seed crackers / malware SEO no GitHub
-- Clones AI pentest com poucas stars e sem manutencao
-- Tools SaaS puras sem codigo (Arkham, Nansen, Bubblemaps — usar via web)
 
 ---
 
 ## Atualizacao
 
-- Forks criados: **2026-07-15**
+- Wave 1 forks: 2026-07-15
+- Wave 2 forks: 2026-07-15 (web-check, GHunt, social-analyzer, Osintgram, robin, recon-ng, sn0int, toutatis, etc.)
 - Conta: **maux339-cpu**
-- Para sincronizar um fork: `gh repo sync maux339-cpu/NOME -b BRANCH`
+- Sync: `gh repo sync maux339-cpu/NOME -b BRANCH`
