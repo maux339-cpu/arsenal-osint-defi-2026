@@ -1,139 +1,139 @@
 # Arsenal OSINT + DeFi + Pentest (2026)
 
-Inventario dos **forks** na conta [maux339-cpu](https://github.com/maux339-cpu) — selecao curada para **pesquisa autorizada**, bug bounty, audit e OSINT.
+Inventario dos **forks** na conta [maux339-cpu](https://github.com/maux339-cpu).
+Pesquisa autorizada / bug bounty / audit. **Nao e kit de crime.**
 
-> Uso exclusivo em alvos com autorizacao. Nao e kit de crime.
-
-**Atualizado:** 2026-07-15 (wave 2 — gaps da varredura X)
-
----
-
-## Wave 2 — OSINT (gaps da varredura X)
-
-| Fork | Upstream | Funcao |
-|------|----------|--------|
-| [web-check](https://github.com/maux339-cpu/web-check) | lissy93 | All-in-one OSINT de website (~34k stars) |
-| [GHunt](https://github.com/maux339-cpu/GHunt) | mxrch | Framework ofensivo Google/Gmail |
-| [ghunt_companion](https://github.com/maux339-cpu/ghunt_companion) | mxrch | Cookies/setup rapido do GHunt |
-| [social-analyzer](https://github.com/maux339-cpu/social-analyzer) | qeeqbox | Username em 1000+ redes (API/CLI/Web) |
-| [Osintgram](https://github.com/maux339-cpu/Osintgram) | Datalux | OSINT Instagram (shell interativa) |
-| [toutatis](https://github.com/maux339-cpu/toutatis) | megadose | Extrai email/phone de contas IG |
-| [robin](https://github.com/maux339-cpu/robin) | apurvsinghgautam | AI Dark Web OSINT |
-| [dark-web-osint-tools](https://github.com/maux339-cpu/dark-web-osint-tools) | apurvsinghgautam | Curadoria tools dark web |
-| [recon-ng](https://github.com/maux339-cpu/recon-ng) | lanmaster53 | Framework OSINT modular |
-| [sn0int](https://github.com/maux339-cpu/sn0int) | kpcyrd | Framework OSINT semi-automatico (Rust) |
-| [OSINT-Cheat-sheet](https://github.com/maux339-cpu/OSINT-Cheat-sheet) | Jieyab89 | 1000+ tools / cheatsheet |
-| [awesome-osint-arsenal](https://github.com/maux339-cpu/awesome-osint-arsenal) | rawfilejson | 750+ tools + installers Kali/Termux |
-| [OpenOSINT](https://github.com/maux339-cpu/OpenOSINT) | OpenOSINT | Agente AI OSINT (MCP/CLI/REPL) |
-| [MetaDetective](https://github.com/maux339-cpu/MetaDetective) | franckferman | Extracao de metadata (OSINT/pentest) |
-| [GitSint](https://github.com/maux339-cpu/GitSint) | N0rz3 | OSINT tracker de GitHub |
+| Wave | Data | Foco |
+|------|------|------|
+| 1 | 2026-07-15 | OSINT core + recon + DeFi base + HexStrike |
+| 2 | 2026-07-15 | Gaps OSINT (web-check, GHunt, social-analyzer…) |
+| 3 | 2026-07-15 | Crypto audit avancado + AI pentest + payloads |
 
 ---
 
-## OSINT — ferramentas principais (wave 1)
+## Wave 3 — Crypto / SC ofensivo + pentest avancado
+
+### Smart contract / DeFi (audit + lab)
 
 | Fork | Upstream | Funcao |
 |------|----------|--------|
-| [awesome-osint](https://github.com/maux339-cpu/awesome-osint) | jivoi | Lista curada (meta-indice) |
-| [osint_stuff_tool_collection](https://github.com/maux339-cpu/osint_stuff_tool_collection) | cipher387 | 1000+ tools/links online |
-| [OSINT-BIBLE](https://github.com/maux339-cpu/OSINT-BIBLE) | frangelbarrera | Guia 2026 (450+ tools) |
-| [sherlock](https://github.com/maux339-cpu/sherlock) | sherlock-project | Username para redes sociais |
-| [maigret](https://github.com/maux339-cpu/maigret) | soxoj | Dossie username (3000+ sites) |
-| [socid-extractor](https://github.com/maux339-cpu/socid-extractor) | soxoj | Motor de extracao do Maigret |
-| [blackbird](https://github.com/maux339-cpu/blackbird) | p1ngul1n0 | Username + email em redes |
-| [holehe](https://github.com/maux339-cpu/holehe) | megadose | Email: sites onde existe conta |
-| [h8mail](https://github.com/maux339-cpu/h8mail) | khast3x | Email OSINT + breaches |
-| [phoneinfoga](https://github.com/maux339-cpu/phoneinfoga) | sundowndev | OSINT de telefone |
-| [theHarvester](https://github.com/maux339-cpu/theHarvester) | laramies | Emails, subdominios, nomes |
-| [spiderfoot](https://github.com/maux339-cpu/spiderfoot) | smicallef | OSINT automatizado E2E |
-| [Photon](https://github.com/maux339-cpu/Photon) | s0md3v | Crawler OSINT |
-| [H4X-Tools](https://github.com/maux339-cpu/H4X-Tools) | vil | Toolkit modular recon/OSINT |
-| [trufflehog](https://github.com/maux339-cpu/trufflehog) | trufflesecurity | Secrets/keys em codigo |
+| [mythril](https://github.com/maux339-cpu/mythril) | ConsenSysDiligence | Symbolic execution EVM |
+| [heimdall-rs](https://github.com/maux339-cpu/heimdall-rs) | Jon-Becker | Decompile / disasm bytecode |
+| [halmos](https://github.com/maux339-cpu/halmos) | a16z | Symbolic testing / properties |
+| [halmos-cheatcodes](https://github.com/maux339-cpu/halmos-cheatcodes) | a16z | Cheatcodes Halmos |
+| [aderyn](https://github.com/maux339-cpu/aderyn) | Cyfrin | Static analyzer moderno (+ MCP) |
+| [4naly3er](https://github.com/maux339-cpu/4naly3er) | Picodes | Static analyzer estilo C4 |
+| [smart-contract-vulnerabilities](https://github.com/maux339-cpu/smart-contract-vulnerabilities) | kadenzipfel | Catalogo de vulns (AI agents) |
+| [damn-vulnerable-defi](https://github.com/maux339-cpu/damn-vulnerable-defi) | OpenZeppelin | Lab ofensivo DeFi |
+| [damn-vulnerable-defi-foundry](https://github.com/maux339-cpu/damn-vulnerable-defi-foundry) | nicolasgarcia214 | DVD em Foundry |
+| [damn-vulnerable-defi-v4-solutions](https://github.com/maux339-cpu/damn-vulnerable-defi-v4-solutions) | SunWeb3Sec | Solucoes DVD v4 |
+| [solodit_content](https://github.com/maux339-cpu/solodit_content) | solodit | Conteudo / findings Solodit |
+| [claudit](https://github.com/maux339-cpu/claudit) | marchev | MCP search Solodit findings |
+| [not-so-smart-contracts](https://github.com/maux339-cpu/not-so-smart-contracts) | crytic | Exemplos de bugs classicos |
 
-### Recon / superficie (ProjectDiscovery + OWASP)
+### AI pentest / red team / web payloads
 
 | Fork | Upstream | Funcao |
 |------|----------|--------|
-| [amass](https://github.com/maux339-cpu/amass) | owasp-amass | Attack surface / subdominios |
-| [subfinder](https://github.com/maux339-cpu/subfinder) | projectdiscovery | Enum passiva de subdominios |
-| [httpx](https://github.com/maux339-cpu/httpx) | projectdiscovery | Probing HTTP |
-| [katana](https://github.com/maux339-cpu/katana) | projectdiscovery | Crawler web |
-| [nuclei](https://github.com/maux339-cpu/nuclei) | projectdiscovery | Scanner de vulns (YAML) |
-| [nuclei-templates](https://github.com/maux339-cpu/nuclei-templates) | projectdiscovery | Templates da comunidade |
-| [reconftw](https://github.com/maux339-cpu/reconftw) | six2dez | Pipeline recon automatizado |
+| [pentagi](https://github.com/maux339-cpu/pentagi) | vxcontrol | AI multi-agent pentest autonomo (~20k) |
+| [PentestGPT](https://github.com/maux339-cpu/PentestGPT) | GreyDGL | LLM pentest framework |
+| [pentest-ai](https://github.com/maux339-cpu/pentest-ai) | 0xSteph | MCP 205 tools + agents OWASP |
+| [pentest-ai-agents](https://github.com/maux339-cpu/pentest-ai-agents) | 0xSteph | Subagents Claude Code ofensivos |
+| [PayloadsAllTheThings](https://github.com/maux339-cpu/PayloadsAllTheThings) | swisskyrepo | Biblia de payloads web |
+| [awesome-pentest](https://github.com/maux339-cpu/awesome-pentest) | enaqx | Meta-lista pentest |
+| [promptfoo](https://github.com/maux339-cpu/promptfoo) | promptfoo | Red team LLM / agents |
 
 ---
 
-## DeFi / smart contract (ofensivo-defensivo)
+## Wave 2 — OSINT (gaps X)
 
-| Fork | Upstream | Funcao |
-|------|----------|--------|
-| [DeFiHackLabs](https://github.com/maux339-cpu/DeFiHackLabs) | SunWeb3Sec | Repro de hacks reais (Foundry) |
-| [foundry](https://github.com/maux339-cpu/foundry) | foundry-rs | forge/cast/anvil + fuzz/invariant |
-| [slither](https://github.com/maux339-cpu/slither) | crytic | Analise estatica Solidity/Vyper |
-| [echidna](https://github.com/maux339-cpu/echidna) | crytic | Property fuzzer |
-| [medusa](https://github.com/maux339-cpu/medusa) | crytic | Fuzzer coverage-guided paralelo |
-| [building-secure-contracts](https://github.com/maux339-cpu/building-secure-contracts) | crytic | Playbook ToB |
-| [smart-contract-attack-vectors](https://github.com/maux339-cpu/smart-contract-attack-vectors) | harendra-shakya | Checklist de vetores |
-| [web3-security-resources](https://github.com/maux339-cpu/web3-security-resources) | Raiders0786 | Hub de aprendizado/audit |
-| [smart-contract-vulndb](https://github.com/maux339-cpu/smart-contract-vulndb) | tintinweb | Dataset de findings |
-| [web3-bug-bounty-hunting-ai-skills](https://github.com/maux339-cpu/web3-bug-bounty-hunting-ai-skills) | shuvonsec | Skills AI (Immunefi/DeFiHack) |
-| [.context](https://github.com/maux339-cpu/.context) | forefy | Skills AI audit + PoC |
-
----
-
-## Agentes AI / pentest web
-
-| Fork | Upstream | Funcao |
-|------|----------|--------|
-| [hexstrike-ai](https://github.com/maux339-cpu/hexstrike-ai) | 0x4m4 | MCP + 150+ tools |
-| [hexstrike-ai-private](https://github.com/maux339-cpu/hexstrike-ai-private) | (local) | Copia privada |
-| [pentestagent](https://github.com/maux339-cpu/pentestagent) | GH05TCREW | Agente black-box + RAG |
-| [xalgorix](https://github.com/maux339-cpu/xalgorix) | xalgord | Agentes autonomos recon/vuln |
-| [pombocyber-skills-cybersec](https://github.com/maux339-cpu/pombocyber-skills-cybersec) | proprio | Skills cybersec |
+| Fork | Upstream |
+|------|----------|
+| [web-check](https://github.com/maux339-cpu/web-check) | lissy93 |
+| [GHunt](https://github.com/maux339-cpu/GHunt) | mxrch |
+| [ghunt_companion](https://github.com/maux339-cpu/ghunt_companion) | mxrch |
+| [social-analyzer](https://github.com/maux339-cpu/social-analyzer) | qeeqbox |
+| [Osintgram](https://github.com/maux339-cpu/Osintgram) | Datalux |
+| [toutatis](https://github.com/maux339-cpu/toutatis) | megadose |
+| [robin](https://github.com/maux339-cpu/robin) | apurvsinghgautam |
+| [dark-web-osint-tools](https://github.com/maux339-cpu/dark-web-osint-tools) | apurvsinghgautam |
+| [recon-ng](https://github.com/maux339-cpu/recon-ng) | lanmaster53 |
+| [sn0int](https://github.com/maux339-cpu/sn0int) | kpcyrd |
+| [OSINT-Cheat-sheet](https://github.com/maux339-cpu/OSINT-Cheat-sheet) | Jieyab89 |
+| [awesome-osint-arsenal](https://github.com/maux339-cpu/awesome-osint-arsenal) | rawfilejson |
+| [OpenOSINT](https://github.com/maux339-cpu/OpenOSINT) | OpenOSINT |
+| [MetaDetective](https://github.com/maux339-cpu/MetaDetective) | franckferman |
+| [GitSint](https://github.com/maux339-cpu/GitSint) | N0rz3 |
 
 ---
 
-## Pipeline sugerido
+## Wave 1 — OSINT core + recon + DeFi base
 
-### OSINT pessoa / email / Google
+### OSINT
+
+[awesome-osint](https://github.com/maux339-cpu/awesome-osint) · [osint_stuff_tool_collection](https://github.com/maux339-cpu/osint_stuff_tool_collection) · [OSINT-BIBLE](https://github.com/maux339-cpu/OSINT-BIBLE) · [sherlock](https://github.com/maux339-cpu/sherlock) · [maigret](https://github.com/maux339-cpu/maigret) · [socid-extractor](https://github.com/maux339-cpu/socid-extractor) · [blackbird](https://github.com/maux339-cpu/blackbird) · [holehe](https://github.com/maux339-cpu/holehe) · [h8mail](https://github.com/maux339-cpu/h8mail) · [phoneinfoga](https://github.com/maux339-cpu/phoneinfoga) · [theHarvester](https://github.com/maux339-cpu/theHarvester) · [spiderfoot](https://github.com/maux339-cpu/spiderfoot) · [Photon](https://github.com/maux339-cpu/Photon) · [H4X-Tools](https://github.com/maux339-cpu/H4X-Tools) · [trufflehog](https://github.com/maux339-cpu/trufflehog)
+
+### Recon web
+
+[amass](https://github.com/maux339-cpu/amass) · [subfinder](https://github.com/maux339-cpu/subfinder) · [httpx](https://github.com/maux339-cpu/httpx) · [katana](https://github.com/maux339-cpu/katana) · [nuclei](https://github.com/maux339-cpu/nuclei) · [nuclei-templates](https://github.com/maux339-cpu/nuclei-templates) · [reconftw](https://github.com/maux339-cpu/reconftw)
+
+### DeFi base
+
+[DeFiHackLabs](https://github.com/maux339-cpu/DeFiHackLabs) · [foundry](https://github.com/maux339-cpu/foundry) · [slither](https://github.com/maux339-cpu/slither) · [echidna](https://github.com/maux339-cpu/echidna) · [medusa](https://github.com/maux339-cpu/medusa) · [building-secure-contracts](https://github.com/maux339-cpu/building-secure-contracts) · [smart-contract-attack-vectors](https://github.com/maux339-cpu/smart-contract-attack-vectors) · [web3-security-resources](https://github.com/maux339-cpu/web3-security-resources) · [smart-contract-vulndb](https://github.com/maux339-cpu/smart-contract-vulndb) · [web3-bug-bounty-hunting-ai-skills](https://github.com/maux339-cpu/web3-bug-bounty-hunting-ai-skills) · [.context](https://github.com/maux339-cpu/.context)
+
+### AI pentest (wave 1)
+
+[hexstrike-ai](https://github.com/maux339-cpu/hexstrike-ai) · [pentestagent](https://github.com/maux339-cpu/pentestagent) · [xalgorix](https://github.com/maux339-cpu/xalgorix) · [hexstrike-ai-private](https://github.com/maux339-cpu/hexstrike-ai-private) · [pombocyber-skills-cybersec](https://github.com/maux339-cpu/pombocyber-skills-cybersec)
+
+---
+
+## Pipelines sugeridos
+
+### Audit / PoC DeFi (avancado)
 
 ```text
-GHunt (+ ghunt_companion)  -> Gmail/Google footprint
-holehe | h8mail            -> email em sites / breaches
-sherlock | maigret | social-analyzer | blackbird  -> username
-Osintgram | toutatis       -> Instagram
-GitSint                    -> GitHub identity
-OpenOSINT                  -> agente AI multi-tool
+aderyn | slither | 4naly3er     -> static
+mythril | halmos                -> symbolic / formal-ish
+foundry fork + echidna/medusa   -> fuzz + invariant
+heimdall-rs                     -> bytecode nao verificado
+DeFiHackLabs + DVD              -> patterns reais + lab
+solodit / claudit + vulns list  -> research de findings
 ```
 
-### Website / dominio
+### OSINT
 
 ```text
-web-check  -> visao all-in-one
-amass | subfinder -> httpx -> katana -> nuclei
-MetaDetective      -> metadata de docs/imagens
+GHunt | holehe | h8mail | maigret | social-analyzer
+web-check | GitSint | MetaDetective | OpenOSINT
 ```
 
-### Dark web / curadoria
+### Pentest web / bug bounty
 
 ```text
-robin | dark-web-osint-tools
-OSINT-Cheat-sheet | awesome-osint-arsenal | awesome-osint
+reconftw | amass | nuclei | PayloadsAllTheThings
+pentagi | PentestGPT | pentest-ai | hexstrike-ai | pentestagent
 ```
 
-### Audit / PoC DeFi
+### Ops / leaks (crypto)
 
 ```text
-slither -> foundry (fork + invariant) -> echidna/medusa
-  + DeFiHackLabs + attack-vectors
+trufflehog  -> keys/seeds em repos e deps
 ```
 
 ---
 
-## Atualizacao
+## Fora de proposito
 
-- Wave 1 forks: 2026-07-15
-- Wave 2 forks: 2026-07-15 (web-check, GHunt, social-analyzer, Osintgram, robin, recon-ng, sn0int, toutatis, etc.)
-- Conta: **maux339-cpu**
-- Sync: `gh repo sync maux339-cpu/NOME -b BRANCH`
+- Wallet drainers / seed crackers / malware SEO
+- MEV bots shillers
+- Reuploads duvidosos (sempre preferir upstream canonico)
+
+---
+
+## Sync
+
+```bash
+gh repo sync maux339-cpu/NOME -b BRANCH
+```
+
+Indice: este repo · Conta: **maux339-cpu**
