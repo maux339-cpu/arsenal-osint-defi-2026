@@ -6,8 +6,58 @@ Pesquisa autorizada / bug bounty / audit. **Nao e kit de crime.**
 | Wave | Data | Foco |
 |------|------|------|
 | 1 | 2026-07-15 | OSINT core + recon + DeFi base + HexStrike |
-| 2 | 2026-07-15 | Gaps OSINT (web-check, GHunt, social-analyzer…) |
+| 2 | 2026-07-15 | Gaps OSINT (web-check, GHunt, social-analyzer...) |
 | 3 | 2026-07-15 | Crypto audit avancado + AI pentest + payloads |
+| 4 | 2026-07-15 | **On-chain investigations** (Zach stack + GraphSense + lists) — 28 forks |
+
+---
+
+## Wave 4 — On-chain investigations / blockchain forensics
+
+Fonte: varredura X (lista ZachXBT + OffcierCia + SlowMist + GraphSense + BlockSec) + check de repos publicos no GitHub.
+**28 forks novos** (nenhum duplicado com waves 1–3).
+
+### Listas / handbooks (metodologia)
+
+| Fork | Upstream | Funcao |
+|------|----------|--------|
+| [On-Chain-Investigations-Tools-List](https://github.com/maux339-cpu/On-Chain-Investigations-Tools-List) | OffcierCia | Catalogo canonico de tools de investigacao on-chain |
+| [Crypto-OpSec-SelfGuard-RoadMap](https://github.com/maux339-cpu/Crypto-OpSec-SelfGuard-RoadMap) | OffcierCia | OpSec crypto / self-guard |
+| [ultimate-defi-research-base](https://github.com/maux339-cpu/ultimate-defi-research-base) | OffcierCia | Research + tools DeFi |
+| [DeFi-Developer-Road-Map](https://github.com/maux339-cpu/DeFi-Developer-Road-Map) | OffcierCia | Roadmap dev DeFi |
+| [non-typical-OSINT-guide](https://github.com/maux339-cpu/non-typical-OSINT-guide) | OffcierCia | Guia OSINT nao-tipico |
+| [awesome_osint_blockchain_analysis](https://github.com/maux339-cpu/awesome_osint_blockchain_analysis) | aaarghhh | Awesome OSINT blockchain |
+| [Legendary_Crypto](https://github.com/maux339-cpu/Legendary_Crypto) | K2SOsint | Crypto OSINT / AML / forensics |
+| [Legendary_OSINT](https://github.com/maux339-cpu/Legendary_OSINT) | K2SOsint | Meta-lista OSINT (CTI/AML/KYC) |
+| [Crypto-Asset-Tracing-Handbook](https://github.com/maux339-cpu/Crypto-Asset-Tracing-Handbook) | slowmist | Manual de tracing de ativos |
+| [Blockchain-dark-forest-selfguard-handbook](https://github.com/maux339-cpu/Blockchain-dark-forest-selfguard-handbook) | slowmist | Handbook dark forest / defesa |
+| [Knowledge-Base](https://github.com/maux339-cpu/Knowledge-Base) | slowmist | KB SlowMist |
+
+### Codigo / tools open (forensics + suporte)
+
+| Fork | Upstream | Funcao |
+|------|----------|--------|
+| [metasuites](https://github.com/maux339-cpu/metasuites) | blocksecteam | Extensao browser (labels em explorers) — stack Zach |
+| [metasleuth_resources](https://github.com/maux339-cpu/metasleuth_resources) | blocksecteam | Reports/resources MetaSleuth (core SaaS) |
+| [Phalcon](https://github.com/maux339-cpu/Phalcon) | blocksecteam | Tx explorer / debug BlockSec |
+| [graphsense-dashboard](https://github.com/maux339-cpu/graphsense-dashboard) | graphsense | Dashboard forensics self-host |
+| [graphsense-lib](https://github.com/maux339-cpu/graphsense-lib) | graphsense | Backend/CLI GraphSense |
+| [graphsense-tagpacks](https://github.com/maux339-cpu/graphsense-tagpacks) | graphsense | TagPacks publicos (labels) |
+| [GraphSense-Maltego-transform](https://github.com/maux339-cpu/GraphSense-Maltego-transform) | INTERPOL-Innovation-Centre | Transform Maltego + GraphSense |
+| [impersonator](https://github.com/maux339-cpu/impersonator) | impersonator-eth | Spoof login dApp (lab) — stack Zach |
+| [impersonator-extension](https://github.com/maux339-cpu/impersonator-extension) | impersonator-eth | Extensao Impersonator |
+| [Orbit](https://github.com/maux339-cpu/Orbit) | s0md3v | Graph BTC / OSINT on-chain |
+| [trueblocks-core](https://github.com/maux339-cpu/trueblocks-core) | TrueBlocks | Indexador ETH local / forensics offline |
+| [rolod0x](https://github.com/maux339-cpu/rolod0x) | rolod0x | Address book privado multi-site |
+| [etherscan-labels](https://github.com/maux339-cpu/etherscan-labels) | brianleect | Dump labels EVM (CSV/JSON) |
+| [helius-sdk](https://github.com/maux339-cpu/helius-sdk) | helius-labs | SDK Solana (API surveillance) |
+| [xray](https://github.com/maux339-cpu/xray) | helius-labs | Explorer SOL human-readable |
+| [a_TON_of_privacy](https://github.com/maux339-cpu/a_TON_of_privacy) | aaarghhh | OSINT/investigacao TON |
+| [atop_maltego](https://github.com/maux339-cpu/atop_maltego) | aaarghhh | Maltego transforms TON |
+
+### SaaS / enterprise **sem** fork (nao tem codigo publico util)
+
+TRM · Chainalysis · Elliptic · Arkham · Cielo · Nansen · Breadcrumbs (produto) · MetaSleuth core · MistTrack · Snusbase · IntelX · LeakPeek · OSINT Industries · Spur · Cavalier · ZachXBT (0 public repos) · wallet-scanner.app (claim sem repo confiavel)
 
 ---
 
@@ -100,11 +150,27 @@ DeFiHackLabs + DVD              -> patterns reais + lab
 solodit / claudit + vulns list  -> research de findings
 ```
 
+### On-chain investigation (fund flow / attribution)
+
+```text
+1. Explorer nativo (Etherscan/Solscan/Tronscan) + metasuites
+2. Grafo: MetaSleuth (SaaS) | graphsense-* (self-host) | Orbit (BTC)
+3. Labels: etherscan-labels + Arkham (SaaS) + graphsense-tagpacks
+4. Bridges / timing / CEX hot (metodologia On-Chain-Investigations-Tools-List)
+5. Lab phishing: impersonator (+ extension)
+6. ETH offline: trueblocks-core
+7. SOL: helius-sdk + xray
+8. Case file: Obsidian (local) + Crypto-Asset-Tracing-Handbook
+9. Off-chain OSINT: GHunt | holehe | maigret | spiderfoot (waves 1-2)
+10. Endpoint: Tether freeze / oficio CEX (nao e repo)
+```
+
 ### OSINT
 
 ```text
 GHunt | holehe | h8mail | maigret | social-analyzer
 web-check | GitSint | MetaDetective | OpenOSINT
+Legendary_OSINT + awesome_osint_blockchain_analysis
 ```
 
 ### Pentest web / bug bounty
@@ -127,6 +193,7 @@ trufflehog  -> keys/seeds em repos e deps
 - Wallet drainers / seed crackers / malware SEO
 - MEV bots shillers
 - Reuploads duvidosos (sempre preferir upstream canonico)
+- Claims "Chainalysis free no browser" sem repo/validacao publica
 
 ---
 
@@ -136,4 +203,12 @@ trufflehog  -> keys/seeds em repos e deps
 gh repo sync maux339-cpu/NOME -b BRANCH
 ```
 
-Indice: este repo · Conta: **maux339-cpu**
+### Sync batch Wave 4 (on-chain)
+
+```bash
+for r in On-Chain-Investigations-Tools-List Crypto-OpSec-SelfGuard-RoadMap ultimate-defi-research-base DeFi-Developer-Road-Map non-typical-OSINT-guide awesome_osint_blockchain_analysis Legendary_Crypto Legendary_OSINT Crypto-Asset-Tracing-Handbook Blockchain-dark-forest-selfguard-handbook Knowledge-Base metasuites metasleuth_resources Phalcon graphsense-dashboard graphsense-lib graphsense-tagpacks GraphSense-Maltego-transform impersonator impersonator-extension Orbit trueblocks-core rolod0x etherscan-labels helius-sdk xray a_TON_of_privacy atop_maltego; do
+  gh repo sync "maux339-cpu/$r" || true
+done
+```
+
+Indice: este repo · Conta: **maux339-cpu** · Waves: **1–4**
